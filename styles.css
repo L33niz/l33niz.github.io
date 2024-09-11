@@ -1,0 +1,103 @@
+body {
+    background-color: rgb(213, 236, 236);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+}
+
+#logo {
+    margin: 0px;
+    padding: 8px;
+    font-family: "Fredoka One", Arial;
+    width: 10%;
+}
+
+#main-header {
+    font-style: italic;
+    /* the display: flex; allows me to move the contact and home stuff at the top next to the logo of my website */
+    display: flex;
+    height: 12vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+body > header {
+    background-color: rgb(241, 203, 233);
+    color: white;
+}
+
+ul {
+    margin: 0px;
+    /* list style none removes bullet points from an li element, basically the contact us bars */
+    list-style: none;
+}
+
+#nav-ul {
+    display: flex;
+}
+
+/* this bottom nav-ul makes the contact us bar spread out horizontally and spaces out */
+#nav-ul > li {
+    padding: 12px;
+    margin: 16px;
+}
+
+body > header > nav > ul {
+    /* text decoration none means that once an link is clicked there is no line showing that the link has been visited */
+    text-decoration: none;
+}
+
+.navbutton {
+    color: white;
+    text-decoration: none;
+    padding: 13.5px;
+    border: 1px solid white;
+    border-radius: 20%;
+}
+
+body > main article {
+    width: 79%;
+    margin: auto;
+    font-size: 1.2vw;
+}
+
+#main-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+#main-content > div {
+    width: 80%;
+}
+
+form {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+img {
+    border-radius: 15%;
+}
+
+body > footer {
+    background-color: rgb(226, 170, 214);
+    color: white;
+    /* alternatively instead of adding the flex box here, I could create as id to target the footer at the bottom, rather than using the parent tag like i'm doing here */
+    display: flex;
+}
+
+#footer-ul {
+    display: flex;
+}
+
+#footer-ul > div > li {
+    margin-left: 20px;
+    
+}
+
+#footer-ul > div > li > a {
+    color: white;
+    text-decoration: none;
+}

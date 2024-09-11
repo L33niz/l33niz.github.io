@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
+    rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrightBlog</title>
+</head>
+<body>
+    <header id="main-header">
+        <!-- the content of the header goes here -->
+         <h1 id="logo">MemBlog</h1>
+         <nav>
+            <ul id="nav-ul">
+                <li>
+                    <!-- i have included class= navbutton this links to the CSS file -->
+                    <a href="https://www.brightnetwork.co.uk/couch-to-coder-2024-lesson-1/" target="_blank" class="navbutton">Home</a>
+                </li>
+                <li>
+                    <a href="https://www.brightnetwork.co.uk/couch-to-coder-2024-lesson-1/" target="_blank" class="navbutton">About Us</a>
+                </li>
+                <li>
+                    <a href="https://www.brightnetwork.co.uk/couch-to-coder-lesson-2/" target="_blank" class="navbutton">Contact Us</a>
+                </li>
+            </ul>
+         </nav>
+    </header>
+    <main>
+        <div id="main-content">
+                 <aside>
+                 <section>
+                <h3>Filter by Month</h3>
+                <nav>
+                    <ul>
+                        <!-- I had an issue here but I fixed it, my dilemma was that I kept putting my text inside the quotes instead of outside the bracket -->
+                        <li><a href="">Filter for January</a></li>
+                        <li><a href="">Filter for Feburary</a></li>
+                        <li><a href="">Filter for March</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section>
+                <h3>Filter by category</h3>
+                <nav>
+                    <ul>
+                        <li><a href="">Isles of Scilly</a></li>
+                        <li><a href="">London</a></li>
+                        <li><a href="">Wicksteed Park</a></li>
+                        <li><a href="">East Carlton Park</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </aside>
+            <div>
+                <!-- I moved the article tag inside the div tags -->
+                <article>
+                    <!-- main conntent of the website goes here -->
+                    <header>
+                        <!-- article's header goes here -->
+                         <h2>Website to store my memories</h2>
+                         <h3>Read time 5 minutes</h3>
+                    </header>
+                    <main>
+                        <p>My reasoning for creating this webite:</p>
+                        <p>I hear you asking, "Why did you create this website, and why call it memories?" Well to that I say, memories are the foundations of a persons personality, we are an amalgomation of all the people and things that we have encountred throughout our lives. So, I wanted to create a website in which I can store all my treasured memories without it taking up too much space on my phone (because I have a small amount of storage on my phone, lol)</p>
+                        <blockquote>
+                            No man is an island, entire of itself; every man is a piece of the continent, a part of the main <cite>-John Donne, 1624</cite>
+                        </blockquote>
+                        <p>My vision for this Memblog is to have all my memories stored on here through picture form. This will mainly be of places I have visited that filled me with an immense amount of joy, and the goal is to have it all in chronological order of  year</p>  
+                        <p>This website is like a treasure trove of time. 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum repellat laudantium animi possimus harum sint voluptatum, ipsa quibusdam? Amet quo sapiente soluta est nostrum explicabo voluptatem beatae provident sunt qui quae sint, nisi incidunt harum. Labore, error. Magni veniam eius id non neque maxime laborum, consequatur possimus eum, libero aut expedita accusamus. Quis accusantium pariatur, modi quo sunt blanditiis? Deleniti consequuntur ad minus asperiores atque nihil soluta quod provident voluptatem veritatis rem delectus corrupti vel quisquam eum, est eius sunt fuga architecto dolor repellendus quas saepe, harum velit. Nam qui eaque aspernatur, sunt saepe perferendis ducimus corporis. Quos, magnam ad.</p>
+                    </main>
+                    <footer>
+                        <h2>Author: Aileen Sam</h2>
+                        <!-- come back to start placing the pictures here -->
+                        <img src="https://placebear.com/150/150" alt="A profile picture of a bear">
+                        <h3>Last posted 22-08-2024</h3>
+                        <!-- the link to profile was not working, but I fixed it. It seems that the issue was that the original link did not contain the https, but instead just started with www. -->
+                        <a href="https://www.linkedin.com/in/aileen-sam/" target="_blank">Profile</a>
+                    </footer>
+                </article>
+            </div>
+       
+        </div>
+       
+        <hr>
+        <h2>Sign up for our news letter</h2>
+        <form action="" method="">
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" required>
+            <br>
+
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="Last_name" required>
+            <br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+            <br>
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password">
+            <br>
+
+            <label for="favourite_memory">Favourite memory:</label>
+            <input type="radio" name="favourite_memory" id="london" value="london">
+            <label for="london">London</label>
+
+            <input type="radio" name="favourite_memory" id="isles_of_scilly" value="isles_of_scilly">
+            <label for="isles_of_scilly">Isles of Scilly</label>
+
+            <input type="radio" name="favourite_memory" id="wicksteed_park" value="wicksteed_park">
+            <label for="wicksteed_park">Wicksteed Park</label>
+
+            <input type="radio" name="favourite_memory" id="east_carlton_park" value="east_carlton_park">
+            <label for="east_carlton_park">East Carlton Park</label>
+            <br>
+            
+            <label for="country">Country:</label>
+            <select name="country" id="country">
+                <option value="england">England</option>
+                <option value="scotland">Scotland</option>
+                <!-- don't leave a space between the code you ahev written inside the value tag because it won't work properly -->
+                <option value="northern_ireland">Northern Ireland</option>
+                <option value="wales">Wales</option>
+                <option value="ghana">Ghana</option>
+            </select>
+            <br>
+
+            <label for="bio">Biography:</label>
+            <!-- I had to enter the cols and rows part manually because it didn't auto complete for some reason -->
+            <textarea name="bio" id="bio" cols="30" rows="6"></textarea>
+            <br>
+
+            <input type="checkbox" name="subscribe" id="subscribe">
+            <label for="subscribe">Subscribe to our newsletter:</label>
+            <br>
+
+            <input type="submit" value="Send">
+  
+        </form>
+        <hr>
+
+    </main>    
+    <footer>
+        <h2>MemBlog Site</h2>
+        <section>
+            <nav>
+                <ul id="footer-ul">
+                    <div> 
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Contact us</a></li>
+                        <li><a href="">Careers Site</a></li>
+                    </div>
+                    <div>
+                        <li><a href="">Privacy Ploicy</a></li>
+                        <li><a href="">Terms & Conditions</a></li>
+                        <li><a href="">Community Guidelines</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </section>
+    </footer>
+</body>
+</html>
